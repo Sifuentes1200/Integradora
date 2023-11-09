@@ -41,9 +41,9 @@ function crearRestaurante(id, nombre, rate, tiempo, ruta) {
   function mostrarRestaurantes(direccion) {
 
 
-    if (direccion === 'siguiente') {
+    if (direccion === 'anterior') { //Cambie esto
       currentIndex = (currentIndex + 1) % restaurantes.length;
-    } else if (direccion === 'anterior') {
+    } else if (direccion === 'siguiente') { //Por esto
       currentIndex = (currentIndex - 1 + restaurantes.length) % restaurantes.length;
     }
     // Obtener los restaurantes segun su pocicion en el arregrlo
