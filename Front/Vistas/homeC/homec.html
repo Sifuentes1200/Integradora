@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="homec.css">
+</head>
+<body>
+    <header> 
+        <img id="barra" src="../assets/Imagenes/Logos/FoodieOriginal.png" alt="Foodie">
+        <input type="checkbox" id="check">
+        <label for="check" class="menu-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </label>
+        <ul class="paginas">
+           <li><button>Home</button></li>
+           <li><button>Preguntas Frecuentes</button></li>
+           <li><button>Contact</button></li>
+        </ul>
+        <div class="funciones">
+            <input type="checkbox" id="bolsa" class="bolsa">
+            <button title="ir hacia el perfil"class="perfil"></button>
+        </div>
+    </header>
+    <section>
+        <div id="comedores" class="comedores">
+            <button id="Regresar"></button>
+            <div id= "comedoresDisponibles" class="comedoresDisponibles">
+                
+            </div>
+            <button id="Seguir"></button>
+        </div>
+
+        <form action="" method="post">
+            <div class="unirComedor">
+                <label for="codigo">Código de <br> comedor</label>
+                <input id="codigo" name="campoCodigo" type="text" maxlength="6" oninput="this.value = this.value.toUpperCase()" placeholder="[xxxxxx]">  
+            </div>
+        <button title="Agregar Comedor" class="agregar" type="submit"></button>
+        </form>
+    </section>
+    <script src="homec.js"></script>
+</body>
+</html>
